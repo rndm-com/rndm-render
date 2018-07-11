@@ -1,20 +1,26 @@
 import React from 'react';
+import { View } from 'react-native';
 import { get, unary } from 'lodash';
 import components from '../components';
 
-const Element = ({ type, props: { children: kids, ...props } }) => {
-  const Output = get(components, type, components.ReactNative.View);
-  const children = Array.isArray(kids) ? kids.map(unary(Element)) :
-    typeof kids === 'object' ? Element(kids) : kids;
+const Default = View;
+
+const Element = ({ type, props: { children, ...props } }) => {
+  const Output = get(components, type, Default);
   return (
     <Output {...props}>
-      {children}
+      {render(children)}
     </Output>
   )
 };
 
-const render = (views = []) => (
-  views.map(unary(Element))
+const render = input => (
+  !!input &&
+  (
+    Array.isArray(input) ? input.map(unary(Element)) :
+      typeof input === 'object' ? Element(input) :
+        typeof input === 'string' ? input : null
+  )
 );
 
 export default render;
