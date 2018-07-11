@@ -1,0 +1,19 @@
+{
+  "name": "rndm-render-core",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/index.js",
+  "author": "RNDM",
+  "license": "Apache-2.0",
+  "scripts": {},
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "lodash": "^4.17.10",
+    "react": "^16.4.1",
+    "react-art": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-native": "^0.56.0",
+    "react-native-device-info": "^0.21.5",
+    "react-native-web": "^0.8.8"
+  }
+}
