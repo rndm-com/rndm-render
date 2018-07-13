@@ -1,11 +1,6 @@
-import components, { plugin } from './components';
+import components from './plugins/components';
 import render from './render';
-
-const use = ({ key, components } = {}) => {
-  if(key) {
-    if (typeof components === 'object') plugin({ [key]: components })
-  }
-};
+import use from './use';
 
 export {
   use,

@@ -1,8 +1,8 @@
-import { merge } from 'lodash';
-import ReactNative from './react-native';
+import { get, merge } from 'lodash';
+import standard from './builtin/standard';
 
 const output = {
-  ReactNative,
+  standard,
 };
 
 export const plugin = (input) => typeof input === 'object' && merge(output, input);

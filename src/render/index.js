@@ -1,24 +1,12 @@
 import React from 'react';
-import { View } from 'react-native';
-import { get, unary } from 'lodash';
-import components from '../components';
+import { unary, get } from 'lodash';
+import renderers from '../plugins/renderers';
 
-const Default = View;
-
-const Element = ({ type, props: { children, ...props } }) => {
-  const Output = get(components, type, Default);
-  return (
-    <Output {...props}>
-      {render(children)}
-    </Output>
-  )
-};
-
-const render = input => (
+const render = (input, renderer = 'standard') => (
   !!input &&
   (
-    Array.isArray(input) ? input.map(unary(Element)) :
-      typeof input === 'object' ? Element(input) :
+    Array.isArray(input) ? input.map(unary(get(renderers, renderer)|| renderers.standard)) :
+      typeof input === 'object' ? (get(renderers, renderer)|| renderers.standard)(input) :
         typeof input === 'string' ? input : null
   )
 );
