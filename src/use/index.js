@@ -5,9 +5,9 @@ import { plugin as Renderers } from '../plugins/renderers';
 import { plugin as Middlewares } from '../plugins/middlewares';
 import build from '../build';
 
-const addItem = (input, key, value, builder) => value && set(input, key, builder(value));
+export const addItem = (input, key, value, builder) => value && set(input, key, builder(value));
 
-const plugin = (Plugin = noop, key, array, builder = identity) => (
+export const plugin = (Plugin = noop, key, array, builder = identity) => (
   Array.isArray(array) &&
   Plugin(
     array.reduce((o, { type, value }) => (
