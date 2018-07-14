@@ -1,9 +1,6 @@
-import { get, merge } from 'lodash';
-import standard from './builtin/standard';
+import { merge } from 'lodash';
 
-const output = {
-  standard,
-};
+const output = {};
 
 export const plugin = (input) => typeof input === 'object' && merge(output, input);
 

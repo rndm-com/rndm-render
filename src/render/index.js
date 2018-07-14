@@ -1,12 +1,12 @@
 import React from 'react';
-import { unary, get } from 'lodash';
+import { unary, get, stubFalse } from 'lodash';
 import renderers from '../plugins/renderers';
 
-const render = (input, renderer = 'standard') => (
+const render = (input, renderer = 'RNDM.core') => (
   !!input &&
   (
-    Array.isArray(input) ? input.map(unary(get(renderers, renderer)|| renderers.standard)) :
-      typeof input === 'object' ? (get(renderers, renderer)|| renderers.standard)(input) :
+    Array.isArray(input) ? input.map(unary(get(renderers, renderer)|| stubFalse)) :
+      typeof input === 'object' ? (get(renderers, renderer)|| stubFalse)(input) :
         typeof input === 'string' ? input : null
   )
 );
