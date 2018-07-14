@@ -1,0 +1,25 @@
+{
+  "use": [
+    {
+      "args": [],
+      "returnDefault": false
+    }
+  ],
+  "components": [
+    {
+      "returnDefault": false
+    }
+  ],
+  "render": [
+    {
+      "args": [],
+      "returnDefault": false
+    }
+  ],
+  "resolve": [
+    {
+      "args": [],
+      "returnDefault": false
+    }
+  ]
+}
