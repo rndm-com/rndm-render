@@ -1,8 +1,5 @@
 {
-  "use.default with [] is expected to.matchSnapshot": {},
-  "components.default is expected to.matchSnapshot": {
-    "value": {}
-  },
-  "render.default with [] is expected to.matchSnapshot": {},
-  "resolve.default with [] is expected to.matchSnapshot": {}
+  "components.default is expected to.matchSnapshot": {},
+  "methods.default is expected to.matchSnapshot": {},
+  "renderers.default is expected to.matchSnapshot": {}
 }

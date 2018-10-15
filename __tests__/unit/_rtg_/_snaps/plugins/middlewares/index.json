@@ -1,8 +1,4 @@
 {
-  "plugin.default with [] is expected to.matchSnapshot": {
-    "value": false
-  },
-  "default.default is expected to.matchSnapshot": {
-    "value": {}
-  }
+  "plugin.default with [] is expected to.matchSnapshot": false,
+  "default.default is expected to.matchSnapshot": {}
 }

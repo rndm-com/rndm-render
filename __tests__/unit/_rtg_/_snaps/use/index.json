@@ -1,7 +1,3 @@
 {
-  "addItem.default with [] is expected to.matchSnapshot": {},
-  "plugin.default with [] is expected to.matchSnapshot": {
-    "value": false
-  },
-  "default.default with [] is expected to.matchSnapshot": {}
+  "plugin.default with [] is expected to.matchSnapshot": false
 }

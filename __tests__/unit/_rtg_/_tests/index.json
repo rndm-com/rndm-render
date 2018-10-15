@@ -5,12 +5,32 @@
       "returnDefault": false
     }
   ],
+  "build": [
+    {
+      "args": [],
+      "returnDefault": false
+    }
+  ],
   "components": [
     {
       "returnDefault": false
     }
   ],
+  "methods": [
+    {
+      "returnDefault": false
+    }
+  ],
+  "renderers": [
+    {
+      "returnDefault": false
+    }
+  ],
   "render": [
+    {
+      "args": [],
+      "returnDefault": false
+    },
     {
       "args": [],
       "returnDefault": false
