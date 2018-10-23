@@ -1,0 +1,16 @@
+{
+  "promise": [
+    {
+      "args": [],
+      "returnDefault": false
+    }
+  ],
+  "default": [
+    {
+      "args": []
+    },
+    {
+      "args": []
+    }
+  ]
+}

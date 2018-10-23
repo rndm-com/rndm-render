@@ -1,0 +1,11 @@
+{
+  "plugin": [
+    {
+      "args": [],
+      "returnDefault": false
+    }
+  ],
+  "default": [
+    {}
+  ]
+}

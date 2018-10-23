@@ -1,0 +1,19 @@
+{
+  "addItem": [
+    {
+      "args": [],
+      "returnDefault": false
+    }
+  ],
+  "plugin": [
+    {
+      "args": [],
+      "returnDefault": false
+    }
+  ],
+  "default": [
+    {
+      "args": []
+    }
+  ]
+}

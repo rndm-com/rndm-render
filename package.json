@@ -1,0 +1,51 @@
+{
+  "name": "@rndm/render",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "author": "RNDM",
+  "license": "Apache-2.0",
+  "description": "Welcome to RNDM Render, the tool for low-no-code, platform-independent application development.",
+  "homepage": "https://github.com/rndm-com/rndm-render#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rndm-com/rndm-render.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rndm-com/rndm-render/issues"
+  },
+  "scripts": {
+    "test": "mocha \"./__tests__/unit/**/*.spec.js\" --opts ./__tests__/unit/_setup/mocha.opts",
+    "cover": "nyc --check-coverage npm run test",
+    "lint": "node_modules/.bin/eslint src"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "lodash": "^4.17.10",
+    "@rndm/test-gen": "0.1.8"
+  },
+  "devDependencies": {
+    "babel-node-modules": "0.0.1",
+    "babel-plugin-istanbul": "4.1.6",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "colors": "^1.1.2",
+    "enzyme": "^3.2.0",
+    "enzyme-adapter-react-16": "^1.1.0"
+  },
+  "nyc": {
+    "lines": 50,
+    "include": [
+      "src/**/*.js"
+    ],
+    "exclude": [
+      "src/**/*.flow.js",
+      "flow-typed"
+    ],
+    "require": [
+      "babel-core/register"
+    ],
+    "all": true,
+    "sourceMap": false,
+    "instrument": false
+  }
+}
