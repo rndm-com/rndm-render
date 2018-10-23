@@ -4,21 +4,25 @@
 
 Welcome to RNDM Render, the tool for low-no-code, platform-independent application development. This tool is the shell wrapper around the RNDM Plugins and Presets.
 
+### Why RNDM?
+
 The core concept is to be able to pass in static JSON or JavaScript objects, which will be rendered out as JavaScript and presented as Platform Native views.
+
+This type of flexibility allows for less code and more statically defined pages, methods and more. In an asingle change of an API you can deliver entirely new user paths and even entire applications all through a server driven JSON structure. This becomes especially prevalent when considering applications built on Native Platforms using React Native as this can mean a completely API driven deployment.
 
 ## Installation
 
 ### From NPM
 
 ```sh
-npm install --save-dev @rndm/render
+npm install --save @rndm/render
 ```
 
 _**Please Note**: This RNDM Render is best used in conjunction with [RNDM Client](https://github.com/rndm-com/rndm-client), which incorporates this tool as well as the [Core Preset](https://github.com/rndm-com/rndm-render-preset-core)_
 
 ## Usage
 
-RNDM Render is designed from the ground up to be used as a plugin solution. There are 4 main plugin slutions that are available:
+RNDM Render is designed from the ground up to be used as a plugin solution. There are 4 main plugin solutions that are available:
 
 ### Renderers
 
@@ -243,4 +247,4 @@ export default Element;
 
 ### Further Reading
 
-The examples on creating ausing RNDM Rendere are all very basic. We highly recommend reading further into the available plugins and presets and their inclusive documentation to allow you to get a fuller understanding of what is possible with this technolofy.
+The examples on creating using RNDM Renderer are all very basic. We highly recommend reading further into the available plugins and presets and their inclusive documentation to allow you to get a fuller understanding of what is possible with this technology.
