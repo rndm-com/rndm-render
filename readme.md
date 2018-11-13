@@ -35,7 +35,7 @@ If we wanted to create a Renderer that would create a React Native Text componen
 ```javascript
 import React from 'react';
 import { Text } from 'react-native';
-import { use } from 'rndm-render';
+import { use } from '@rndm/render';
 
 const renderer = input => (<Text>{input}</Text>);
 const renderers = [
@@ -60,7 +60,7 @@ If we want to use this, we can do so as such:
 
 ```javascript
 // Inside the file you want to render the item
-import { render } from 'rndm-render';
+import { render } from '@rndm/render';
 
 // ...
 
@@ -83,7 +83,7 @@ Components are prebuilt visual elements that can be accessed via keys. Like the 
 ```javascript
 import React from 'react';
 import { Text } from 'react-native';
-import { use } from 'rndm-render';
+import { use } from '@rndm/render';
 
 const component = ({ text } = {}) => (<Text>{text}</Text>);
 const components = [
@@ -106,7 +106,7 @@ For this, we will make use of the existing renderer from the Core Plugin.
 
 ```javascript
 // Inside the file you want to render the item
-import { render } from 'rndm-render';
+import { render } from '@rndm/render';
 
 // ...
 
@@ -133,7 +133,7 @@ Methods are prebuilt functions that take arguments passed into them from teh JSO
 
 ```javascript
 import React from 'react';
-import { use } from 'rndm-render';
+import { use } from '@rndm/render';
 
 const method = (val1 = 0, val2 = 0) => (va1 + val2);
 const methods = [
@@ -158,7 +158,7 @@ For this, we will make use of the existing renderer from the Core Plugin.
 // Inside the file you want to render the item
 import React from 'react';
 import { Text } from 'react-native';
-import { render } from 'rndm-render';
+import { render } from '@rndm/render';
 
 // ...
 
@@ -190,7 +190,7 @@ In the example below we are going to build a Logging tool that will print out wh
 ```javascript
 
 import React from 'react';
-import { use } from 'rndm-render';
+import { use } from '@rndm/render';
 
 const middleware = [
   {
