@@ -8,7 +8,7 @@ Welcome to RNDM Render, the tool for low-no-code, platform-independent applicati
 
 The core concept is to be able to pass in static JSON or JavaScript objects, which will be rendered out as JavaScript and presented as Platform Native views.
 
-This type of flexibility allows for less code and more statically defined pages, methods and more. In an asingle change of an API you can deliver entirely new user paths and even entire applications all through a server driven JSON structure. This becomes especially prevalent when considering applications built on Native Platforms using React Native as this can mean a completely API driven deployment.
+This type of flexibility allows for less code and more statically defined pages, methods and more. In a single change of an API you can deliver entirely new user paths and even entire applications all through a server driven JSON structure. This becomes especially prevalent when considering applications built on Native Platforms using React Native as this can mean a completely API driven deployment.
 
 ## Installation
 
@@ -72,11 +72,11 @@ export default Element;
 
 ```
 
-Clearly this is a very simple example of generating the view directly from a text object. However, faily comprehensive and complex renderers can be created to encompass all kinds of components and solutions for your project.
+Clearly this is a very simple example of generating the view directly from a text object. However, fairly comprehensive and complex renderers can be created to encompass all kinds of components and solutions for your project.
 
 ### Components
 
-Components are prebuilt visual elements that can be accessed via keys. Like the renderer above, you are able to assign these into the render too, using the 'use' method.
+Components are pre-built visual elements that can be accessed via keys. Like the renderer above, you are able to assign these into the render too, using the 'use' method.
 
 **Example**
 
@@ -127,7 +127,7 @@ export default Element;
 
 ### Methods
 
-Methods are prebuilt functions that take arguments passed into them from teh JSON or JavaScript objects.
+Methods are pre-built functions that take arguments passed into them from the JSON or JavaScript objects.
 
 **Example**
 
@@ -181,7 +181,7 @@ export default Element;
 
 ### Middlewares
 
-Middleware is an interceptor that will execute before the Componet is rendered.
+Middleware is an interceptor that will execute before the Component is rendered.
 
 **Example**
 
