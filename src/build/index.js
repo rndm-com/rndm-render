@@ -17,6 +17,7 @@ export const Element = input => (props) => {
 
 const build = input => {
   if (typeof input !== 'object') return input;
+  if (input['$$typeof']) return input;
   return Element(input);
 };
 
