@@ -1,4 +1,4 @@
-# RNDM Render
+# [RNDM](https://www.rndm.com) Render
 
 ## About
 
@@ -18,7 +18,7 @@ This type of flexibility allows for less code and more statically defined pages,
 npm install --save @rndm/render
 ```
 
-_**Please Note**: This RNDM Render is best used in conjunction with [RNDM Client](https://github.com/rndm-com/rndm-client), which incorporates this tool as well as the [Core Preset](https://github.com/rndm-com/rndm-render-preset-core)_
+_**Please Note**: This RNDM Render is best used in conjunction with [RNDM Client](https://www.rndm.com/docs/utils/client), which incorporates this tool as well as the [Core Preset](https://www.rndm.com/docs/rndm-render/preset/core)_
 
 ## Usage
 
@@ -248,3 +248,5 @@ export default Element;
 ### Further Reading
 
 The examples on creating using RNDM Renderer are all very basic. We highly recommend reading further into the available plugins and presets and their inclusive documentation to allow you to get a fuller understanding of what is possible with this technology.
+
+Check out the [Playground](https://www.rndm.com/playground) page to see how these features work.
